@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminLogin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#C56363"
+        android:fontFamily="cursive"
+        android:paddingVertical="60sp"
+        android:text="Admin Login"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:layout_marginBottom="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginBottom="20dp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvAdminUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginBottom="50sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvAdminPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30sp"
+        android:background="@drawable/button_bg"
+        android:text="Login"
+        android:onClick="adminHomepage"
+        android:layout_marginBottom="30sp"/>
+
+</LinearLayout>

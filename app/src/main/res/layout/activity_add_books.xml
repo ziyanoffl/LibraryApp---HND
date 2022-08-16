@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddBooks">
+
+    <TextView
+        android:id="@+id/tvAddBooks"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="@color/accentColor"
+        android:paddingVertical="25dp"
+        android:paddingLeft="4dp"
+        android:text="Add new book"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_bookTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Book Title"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_bookAuthorInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Author"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_bookTypeInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_bookDescriptionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/myTextInputLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingBottom="30sp"
+        app:boxBackgroundMode="outline">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_priceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_addBook"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/button_bg"
+        android:text="Add"
+        android:onClick="addBook"
+        android:layout_marginBottom="30sp"/>
+
+
+
+</LinearLayout>
