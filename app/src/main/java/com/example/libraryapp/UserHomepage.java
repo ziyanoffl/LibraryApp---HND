@@ -39,4 +39,9 @@ public class UserHomepage extends AppCompatActivity {
         final Intent obj = new Intent(getApplicationContext(),BookList.class);
         startActivity(obj);
     }
+
+    public void goToYoutubeIntro(View view) {
+        final Intent obj2 = new Intent(getApplicationContext(),UserYoutubeIntroActivity.class);
+        startActivity(obj2);
+    }
 }

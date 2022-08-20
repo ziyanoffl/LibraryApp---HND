@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/My/Java Apps/Android apps/LibraryApp-HND/app/src/main/res/layout/activity_book_list.xml" value="0.25" />
+        <entry key="..\:/My/Java Apps/Android apps/LibraryApp-HND/app/src/main/res/layout/activity_user_homepage.xml" value="0.25" />
+        <entry key="..\:/My/Java Apps/Android apps/LibraryApp-HND/app/src/main/res/layout/activity_user_youtube_intro.xml" value="0.25" />
         <entry key="..\:/My/Java Apps/Android apps/LibraryApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.121" />
         <entry key="..\:/My/Java Apps/Android apps/LibraryApp/app/src/main/res/drawable/button2_bg.xml" value="0.2555" />
         <entry key="..\:/My/Java Apps/Android apps/LibraryApp/app/src/main/res/drawable/button3_bg.xml" value="0.2555" />

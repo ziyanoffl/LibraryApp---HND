@@ -43,12 +43,12 @@
         android:background="@drawable/button3_bg"
         android:onClick="goToViewBooks"
         android:text="View Books"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/locBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.63" />
 
     <Button
         android:id="@+id/btn_libraryIntroduction"
@@ -56,7 +56,7 @@
         android:layout_height="73dp"
         android:layout_marginBottom="264dp"
         android:background="@drawable/button3_bg"
-        android:onClick="goToViewBooks"
+        android:onClick="goToYoutubeIntro"
         android:text="Introduction Video"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
