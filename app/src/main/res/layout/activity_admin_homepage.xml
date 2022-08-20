@@ -8,8 +8,9 @@
 
     <TextView
         android:id="@+id/tvAdminHomepage"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
         android:background="@color/accentColor"
         android:paddingVertical="25dp"
         android:paddingLeft="4dp"
@@ -17,32 +18,36 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_goToAddbook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_goToAddbook"
         android:layout_width="119dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="508dp"
-        android:text="Add Book"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button3_bg"
         android:onClick="goToAddBooks"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Add Book"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAdminHomepage" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="120dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="144dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="388dp"
-        android:text="View books"
+        android:background="@drawable/button3_bg"
         android:onClick="goToViewBooksAdmin"
+        android:text="View books"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_goToAddbook" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

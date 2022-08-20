@@ -9,7 +9,8 @@
     <TextView
         android:id="@+id/tvAdminHomepage"
         android:layout_width="match_parent"
-        android:layout_height="77dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="13dp"
         android:background="@color/accentColor"
         android:paddingVertical="25dp"
         android:paddingLeft="4dp"
@@ -19,17 +20,17 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/bookList"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/bookList"
         android:layout_width="0dp"
-        android:layout_height="656dp"
-        android:layout_marginTop="76dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAdminHomepage" />
 </androidx.constraintlayout.widget.ConstraintLayout>
