@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.util.HashMap;
 
@@ -21,12 +22,29 @@ public class AddBooks extends AppCompatActivity {
     EditText bookNameTxt, authorTxt, descriptionTxt, priceTxt, typeTxt;
     private FirebaseDatabase db = FirebaseDatabase.getInstance();
     private DatabaseReference root = db.getReference().child("Books");
+    Button addBookBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_books);
         initTxtViews();
+        addBookBtn = findViewById(R.id.btn_addBook);
+
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
+
+
+        addBookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(!bookNameTxt.getText().toString().isEmpty()){
+                    FcmNotificationsSender notificationsSender = new FcmNotificationsSender("/topics/all","New book added!",bookNameTxt.getText().toString(),getApplicationContext(),AddBooks.this);
+                    notificationsSender.SendNotifications();
+                }else{
+                    Toast.makeText(AddBooks.this, "Please Enter book name!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
     }
 
