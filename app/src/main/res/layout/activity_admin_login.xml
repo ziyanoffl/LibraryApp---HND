@@ -60,7 +60,6 @@
         android:layout_marginHorizontal="30sp"
         android:background="@drawable/button_bg"
         android:text="Login"
-        android:onClick="adminHomepage"
         android:layout_marginBottom="30sp"/>
 
 </LinearLayout>
