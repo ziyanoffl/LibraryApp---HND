@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toolbar;
 
+import com.google.firebase.messaging.FirebaseMessaging;
+
 public class UserHomepage extends AppCompatActivity {
 
     Button locationBtn;
@@ -20,8 +22,8 @@ public class UserHomepage extends AppCompatActivity {
 
         //buttons
         locationBtn = (Button)findViewById(R.id.locBtn);
-
         Buttons();
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
     }
 
     public void Buttons(){

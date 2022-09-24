@@ -44,10 +44,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(	6.9126, 79.8587);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Colombo Public Library"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        moveToCurrentLocation(sydney);
+        LatLng libraryLocation = new LatLng(	6.9126, 79.8587);
+        mMap.addMarker(new MarkerOptions().position(libraryLocation).title("Ma's Library"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(libraryLocation));
+        moveToCurrentLocation(libraryLocation);
     }
     private void moveToCurrentLocation(LatLng currentLocation)
     {
@@ -56,7 +56,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.animateCamera(CameraUpdateFactory.zoomIn());
         // Zoom out to zoom level 10, animating with a duration of 2 seconds.
         mMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
-
-
     }
 }
